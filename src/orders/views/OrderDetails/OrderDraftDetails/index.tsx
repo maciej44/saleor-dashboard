@@ -4,6 +4,8 @@ import {
   OrderDetailsQuery,
   OrderDraftUpdateMutation,
   OrderDraftUpdateMutationVariables,
+  OrderLineUpdateMutation,
+  OrderLineUpdateMutationVariables,
   StockAvailability,
   useCustomerAddressesQuery
 } from "@saleor/graphql";
@@ -48,7 +50,10 @@ interface OrderDraftDetailsProps {
   loading: any;
   data: OrderDetailsQuery;
   orderAddNote: any;
-  orderLineUpdate: any;
+  orderLineUpdate: PartialMutationProviderOutput<
+    OrderLineUpdateMutation,
+    OrderLineUpdateMutationVariables
+  >;
   orderLineDelete: any;
   orderShippingMethodUpdate: any;
   orderLinesAdd: any;
