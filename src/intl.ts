@@ -286,6 +286,7 @@ export const buttonMessages = defineMessages({
   },
   reset: {
     defaultMessage: "Reset",
+    id: "TOMgXz",
     description: "button"
   },
   save: {
